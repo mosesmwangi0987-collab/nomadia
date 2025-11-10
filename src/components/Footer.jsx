@@ -1,11 +1,13 @@
-import React from 'react';
+import React from "react";
 
-function Footer() {
-    return ( 
-        <footer className="p-4 bg gray-900 text-white text-center">
-            <h1 classsName="text-lg">Footer section</h1>
-        </footer>
-    );
-}
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-gray-300 py-8 text-center mt-20">
+      <p className="text-sm">
+        © {new Date().getFullYear()} Nomadia. All rights reserved.
+      </p>
+    </footer>
+  );
+};
 
 export default Footer;

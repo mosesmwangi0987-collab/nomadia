@@ -1,30 +1,23 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import StatsSection from "./components/StatsSection";
 import About from "./components/About";
+import Features from "./components/Features";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="font-sans text-gray-900">
-      {/* Navbar */}
+    <>
       <Navbar />
-
-      {/* Hero Section */}
-      <main>
-        <Hero />
-      </main>
-
-      {/* About Section */}
-      <section>
-        <About />
-      </section>
-
-      {/* Footer Section */}
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+      <Hero />
+      <StatsSection />
+      <About />
+      <Features />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

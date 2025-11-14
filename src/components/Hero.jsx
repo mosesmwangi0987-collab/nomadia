@@ -1,49 +1,30 @@
 import React from "react";
+import venice from "../assets/images/venice.jpg";
 
 const Hero = () => {
   return (
-    <div className="w-full">
-      {/* Navbar */}
-      <nav className="flex justify-between items-center py-6 px-10 absolute top-0 left-0 w-full z-20">
-        <h1 className="text-white text-2xl font-bold">Nomadia</h1>
-        <ul className="hidden md:flex space-x-8 text-gray-300 font-medium">
-          <li className="hover:text-white cursor-pointer">Home</li>
-          <li className="hover:text-white cursor-pointer">About</li>
-          <li className="hover:text-white cursor-pointer">Services</li>
-          <li className="hover:text-white cursor-pointer">Contact</li>
-        </ul>
-      </nav>
+    <section
+      className="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
+      style={{ backgroundImage: `url(${venice})` }}
+    >
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Hero Section (background image + overlay) */}
-      <div
-        className="relative flex flex-col justify-center items-center text-center text-white h-[85vh] bg-cover bg-center"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1800&q=80')",
-        }}
-      >
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-black/50"></div>
+      {/* Content */}
+      <div className="relative z-10 text-center px-6">
+        <h1 className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">
+          Discover the World with Nomadia
+        </h1>
 
-        {/* Hero content */}
-        <div className="relative z-10 max-w-3xl px-6">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
-            Discover the World <br className="hidden md:block" />
-            with <span className="text-blue-400">Nomadia</span>
-          </h1>
+        <p className="text-lg md:text-2xl max-w-2xl mx-auto mb-6 drop-shadow-lg">
+          Explore breathtaking destinations, uncover hidden gems, and travel effortlessly.
+        </p>
 
-          <p className="text-gray-200 max-w-2xl mx-auto md:mx-0 mb-8">
-            Explore breathtaking destinations, connect with global travelers,
-            and make memories that last a lifetime. Wherever you go, Nomadia
-            brings your world closer.
-          </p>
-
-          <button className="bg-blue-500 text-white px-8 py-3 rounded-md font-semibold hover:bg-blue-600 transition">
-            Get Started
-          </button>
-        </div>
+        <button className="px-8 py-3 bg-white/20 backdrop-blur-md border border-white rounded-xl text-white font-semibold hover:bg-white/40 transition">
+          Start Your Journey
+        </button>
       </div>
-    </div>
+    </section>
   );
 };
 

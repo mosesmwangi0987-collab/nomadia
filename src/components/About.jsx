@@ -1,49 +1,46 @@
 import React from "react";
 import { motion } from "framer-motion";
-import aboutImg from "../assets/images/About.jpg";
+import venice from "../assets/images/venice.jpg"; // you said this is available
 
 const About = () => {
   return (
-    <section className="py-20 bg-white flex justify-center">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
-
-        {/* Image */}
+    <section className="w-full bg-white py-20">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        
+        {/* LEFT IMAGE */}
         <motion.img
-          src={aboutImg}
+          src={venice}
           alt="About Nomadia"
-          className="rounded-xl shadow-lg"
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="w-full h-[320px] md:h-[380px] object-cover rounded-xl shadow-lg"
         />
 
-        {/* Text */}
+        {/* RIGHT CONTENT */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1 }}
-          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col justify-center"
         >
-          <h2 className="text-3xl font-bold mb-4">
-            About <span className="text-blue-600">Nomadia</span>
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            About <span className="text-teal-600">Nomadia</span>
           </h2>
 
-          <p className="text-gray-600 leading-relaxed mb-4">
-            Nomadia is your gateway to exploring the world. We help travelers find
-            breathtaking destinations, connect with local cultures, and build
-            lasting memories.
+          <p className="text-gray-600 leading-relaxed mb-6 max-w-lg">
+            Nomadia is your gateway to exploring the world with ease.  
+            We help travelers discover breathtaking destinations, connect  
+            with local cultures, and turn every journey into a story worth telling.
+            Whether you're chasing sunsets, exploring ancient cities, or  
+            seeking hidden gems — Nomadia guides your adventure.
           </p>
 
-          <p className="text-gray-600 leading-relaxed mb-6">
-            From serene beaches to bustling cities, Nomadia turns every journey
-            into a meaningful story.
-          </p>
-
-          <button className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700">
+          <button className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-xl w-fit font-medium shadow-md">
             Learn More
           </button>
         </motion.div>
+
       </div>
     </section>
   );

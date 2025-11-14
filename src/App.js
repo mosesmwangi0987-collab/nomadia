@@ -1,4 +1,3 @@
-
 import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -12,17 +11,14 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className="w-full overflow-x-hidden bg-white">
-      {/* NAVBAR ALWAYS ON TOP */}
       <Navbar />
 
-      {/* SECTIONS */}
       <Hero />
       <About />
       <Features />
       <StatsSection />
       <Gallery />
       <Contact />
-
       <Footer />
     </div>
   );

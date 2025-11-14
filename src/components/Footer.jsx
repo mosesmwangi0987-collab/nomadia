@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white text-center py-6 text-sm">
+    <footer className="py-6 text-center text-gray-500 bg-white border-t">
       © 2025 Nomadia. All rights reserved.
     </footer>
   );
-}
+};
+
+export default Footer;

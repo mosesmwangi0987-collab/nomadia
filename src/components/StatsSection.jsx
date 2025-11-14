@@ -2,33 +2,22 @@ import React from "react";
 
 const StatsSection = () => {
   return (
-    <section className="w-full flex justify-center px-4 mt-[-4rem] relative z-20">
-      <div className="w-full max-w-6xl bg-teal-700 text-white rounded-2xl shadow-xl py-10 px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-
-        {/* STAT 1 */}
-        <div className="text-center">
-          <h2 className="text-4xl font-bold">10+</h2>
-          <p className="text-sm opacity-90 mt-2">Years of Expertise</p>
+    <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-10 text-center">
+        <div>
+          <h3 className="text-5xl font-bold text-primary">+50</h3>
+          <p className="text-gray-600 mt-2">Destinations</p>
         </div>
 
-        {/* STAT 2 */}
-        <div className="text-center">
-          <h2 className="text-4xl font-bold">80+</h2>
-          <p className="text-sm opacity-90 mt-2">Countries Explored</p>
+        <div>
+          <h3 className="text-5xl font-bold text-primary">10k+</h3>
+          <p className="text-gray-600 mt-2">Happy Travelers</p>
         </div>
 
-        {/* STAT 3 */}
-        <div className="text-center">
-          <h2 className="text-4xl font-bold">5K+</h2>
-          <p className="text-sm opacity-90 mt-2">Happy Travelers</p>
+        <div>
+          <h3 className="text-5xl font-bold text-primary">98%</h3>
+          <p className="text-gray-600 mt-2">Satisfaction Rate</p>
         </div>
-
-        {/* STAT 4 */}
-        <div className="text-center">
-          <h2 className="text-4xl font-bold">300+</h2>
-          <p className="text-sm opacity-90 mt-2">Unique Destinations</p>
-        </div>
-
       </div>
     </section>
   );
